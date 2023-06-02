@@ -3,3 +3,19 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+    article_index:
+        path: /articles
+        controller: App\Controller\ArticleController::index
+
+    article_create:
+        path: /articles/create
+        controller: App\Controller\ArticleController::create
+
+    article_edit:
+        path: /articles/{id}/edit
+        controller: App\Controller\ArticleController::edit
+
+    article_delete:
+        path: /articles/{id}/delete
+        controller: App\Controller\ArticleController::delete
