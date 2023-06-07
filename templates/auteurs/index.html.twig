@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AuteursController!{% endblock %}
+
+{% block body %}
+    <h1>Les Auteurs!</h1>
+    <ul>
+        {% for auteur in auteurs %}
+            <li>{{ auteur.Nom }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
